@@ -15,8 +15,7 @@ def main():
 def ask_number():
     while True:
         try:
-            number = int(input("What's the number? "))
-            # number = int(time.time())
+            number = int(input("What's the number? "))
             return number
         except ValueError:
             print("Please enter a valid number(It shouldn't have any decimal values) ")
