@@ -1,0 +1,55 @@
+from tkinter import *
+import customtkinter as gui
+def main():
+	#Main window customization
+	win = gui.CTk()
+	win.title("Multiplication-Table Generator")
+	gui.set_appearance_mode("dark")
+	gui.set_default_color_theme("green")
+	win.geometry("600x600")
+
+
+	l1 = gui.CTkLabel(win, text="Multiplication Table Generator", font=("Arial Black",30),fg_color="#CF5C36",corner_radius=10,text_color="#EFC88B")
+	l1.pack(pady=3)
+	 
+	f1 =  ("Medium", 16)
+	l2 = gui.CTkLabel(win, text="Enter the number of which you want the table of:", font=f1)
+	l2.pack(anchor="w")
+	i1 = gui.CTkEntry(win,fg_color="#EEE5E9",text_color="black")
+	i1.pack(anchor="w")
+
+	l3 = gui.CTkLabel(win, text="Enter the number of multiples you want:",font=f1)
+	l3.pack(anchor="w")
+	i2 = gui.CTkEntry(win,fg_color="#EEE5E9",text_color="black")
+	i2.pack(anchor="w")
+
+	def generate_table():
+		base, multiples = i1.get(), i2.get()
+		if base=='' or multiples=='':
+			l4.configure(text="Please enter the fields above",font=("Arial black",15),text_color="red")
+		else:
+			base, multiples = int(base), int(multiples)
+			i = 0
+			table_string = ""
+			for multiple in range(multiples):
+				i += 1
+				l = f"{base} x {i} = {i*base} \n"
+				table_string += l
+			l4.configure(text=table_string)
+
+	l4 = gui.CTkLabel(win, text="",font=("Arial", 18),text_color="#b4d6d6")
+
+
+	b1 = gui.CTkButton(win, text="Submit", fg_color="#EEE5E9", hover_color="#7C7C7C",command=generate_table,text_color="black",font=("Arial Black", 16))
+	b1.pack(anchor="w",pady=23)
+
+	#exit button
+	b2 = Button(win,text="Click here to exit",bg="brown",command=lambda: win.quit())
+	b2.pack(anchor="e",side=BOTTOM)
+	l4.pack(anchor="w")
+	
+	win.mainloop()
+
+
+if __name__ == "__main__":
+	main()
