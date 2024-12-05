@@ -11,6 +11,6 @@ A Graphical User Interface mode has been added to some of them
 [>Quick Command Line Dictionary which works in al oop](https://github.com/soham-mg/PythonProjects/blob/main/QuickDict.py) <br>
 [>Username Generator](https://github.com/soham-mg/PythonProjects/blob/main/UsernameGenerator.py) Requires the Colors.py file to work properly<br>
 
-## Other Miscellaneous files that are required for proper working of the programs above
+## Other Miscellaneous files that are required for proper working of the projects above
 [>Colors Library](https://github.com/soham-mg/PythonProjects/blob/main/Colors.py)<br>
 [>File of English Words](https://raw.githubusercontent.com/soham-mg/PythonProjects/refs/heads/main/english_words.txt)<br>
