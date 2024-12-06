@@ -8,7 +8,7 @@ A Graphical User Interface mode has been added to some of them
 [>Password Generator With a UI](https://github.com/soham-mg/PythonProjects/blob/main/PasswordGeneratorWithGUI) <br>
 [>Collatz Sequencw](https://github.com/soham-mg/PythonProjects/blob/main/CollatzSequence.py) <br>
 [>Guess The Number Game](https://github.com/soham-mg/PythonProjects/blob/main/GuessTheNumberGame.py) Works on the command line. <br>
-[>Quick Command Line Dictionary which works in al oop](https://github.com/soham-mg/PythonProjects/blob/main/QuickDict.py) <br>
+[>Quick Command Line Dictionary which works in a loop](https://github.com/soham-mg/PythonProjects/blob/main/QuickDict.py) <br>
 [>Username Generator](https://github.com/soham-mg/PythonProjects/blob/main/UsernameGenerator.py) Requires the Colors.py file to work properly<br>
 
 ## Other Miscellaneous files that are required for proper working of the projects above
